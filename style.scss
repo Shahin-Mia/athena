@@ -3,27 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
-.card{
-    margin: 10px 0;
-    border-radius: 80px 0;
-    width: 100%;
-    border: none;
-    background: none;
-    transition: box-shadow .3s ease;
-    img{
-        width: 135px;
-        height: 135px;
-        margin: auto;
-        padding: 20px;
-    }
-    &:hover{
-        box-shadow: 0 0 30px #52fdb0;
-        background: white;
-    }
-}
 
 .user-experience{
-    background-color: #fafffd;
+    background-image: url("image/what-bg.png");
     text-align: center;
     width: 100%;
     min-height: 80vh;
@@ -34,9 +16,28 @@
     p{
         color:#8D8D8D;
     }
+    .card{
+        margin: 10px 0;
+        border-radius: 80px 0;
+        width: 100%;
+        border: none;
+        background: none;
+        transition: box-shadow .3s ease;
+        img{
+            width: 135px;
+            height: 135px;
+            margin: auto;
+            padding: 20px;
+        }
+        &:hover{
+            box-shadow: 0 0 30px #52fdb0;
+            background: white;
+        }
+    }
 }
 
 .achievements{
+    background-image: url("image/bg-4.png");
     min-height: 80vh;
     padding-top:100px;
     .achieved1{
@@ -60,7 +61,6 @@
     }
     img{
         padding: 25px;
-        height: 100px;
     }
     .col-md-6{
         padding: 0 10px;
@@ -70,5 +70,138 @@
     }
     p{
         color:#8D8D8D;
+    }
+    h3{
+        font-size: 35px;
+    }
+}
+
+.running{
+    background-image: url("image/bg-3.png");
+    min-height: 100vh;
+    padding: 50px 0;
+}
+.choose-item{
+    background-image: url("image/bg-1.png");
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px 0;
+    .card{
+        padding-top: 30px;
+        box-shadow: 0 0 5px grey;
+        ul{
+          li{
+              list-style: none;
+              font-size: 18px;
+              margin: 7px 0;
+          }  
+        }
+        &:hover{
+            border-image: linear-gradient(to right, #2AF698, #009EFD);
+            border-image-width: 2px;
+            border-image-slice: 4;
+            .underline{
+                visibility: hidden;
+            }
+            .custom-btn{
+                visibility: visible;
+            }
+        }
+        .custom-btn{
+            width: 130px;
+            height: 40px;
+            border:none;
+            background: linear-gradient(to right, #2AF698, #009EFD);
+            border-radius: 20px 0;
+            font-weight: 600;
+            color: white;
+            visibility: hidden;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    h1{
+        font-weight: 700;
+    }
+    p{
+        font-size: 17px;
+        color:#8D8D8D;
+    }
+    .underline{
+        width: 120px;
+        height: 2px;
+        background: linear-gradient(90deg, #2AF698, #009EFD);
+        margin: auto;
+    }
+}
+
+.footer{
+    background-color:#FAFFFD;
+    .subscription{
+        display: grid;
+        place-items: center;
+        padding: 70px 0 120px;
+    }
+    .logo{
+        width: 170px;
+    }
+    li{
+        list-style: none;
+        font-weight: 500;
+    }
+    .fancy-inputs{
+        width: 400px;
+        min-height: 50px;
+        background: white;
+        box-shadow: 0 0 5px gray;
+        border-radius: 5px;
+        input{
+            background: none;
+            margin-left: 15px;
+            width: 250px;
+            border:none;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            margin:0 10px;
+            border:none;
+            background: linear-gradient(to right, #2AF698, #009EFD);
+            border-radius: 5px;
+            font-weight: 600;
+            color: white;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
+.header{
+    background-image: url("image/header-bg.png");
+    min-height: 100vh;
+    background-position: bottom;
+    nav{
+        .logo{
+            height: 100px;
+        }
+    }
+    h1{
+        font-size: 70px;
+    }
+}
+.contact-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px 0;
+    border:none;
+    background: linear-gradient(to right, #2AF698, #009EFD);
+    font-weight: 600;
+    color: white;
+    &:focus{
+    outline: none;
     }
 }
